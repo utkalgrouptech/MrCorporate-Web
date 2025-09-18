@@ -1,0 +1,12 @@
+
+export {default as facility_management} from "./facility_management_service.jpg"
+export {default as airport_management} from "./airport_management.jpg"
+export {default as coroprate_canteen} from "./coroprate-canteen.jpg"
+export {default as landscaping} from "./landscaping_servise.jpg"
+export {default as payroll} from "./payroll_management_system.jpg"
+export {default as sanitation} from "./sanitation_service.jpg"
+export {default as ship_management} from "./ship_management.jpg"
+export {default as staffing} from "./staffing-solution.jpg"
+export {default as technical_servises} from "./technical_servises.jpg"
+export {default as waste_management} from "./waste_management.jpg"
+export {default as pestcontrol} from "./isinfection-of-premises-from-insects-and-rodents-with-chemicals.jpg_s1024x1024wisk20cRBXJHJNTAvLNTJG-Nt5nSB2xkUfRlIdP8kM_UtmPyH0-1.jpg"

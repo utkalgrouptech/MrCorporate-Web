@@ -1,0 +1,1 @@
+export {default as contact_bg} from "./contact_img.png"

@@ -1,0 +1,215 @@
+// // utils/section/sectionsData.ts
+// export interface SectionData {
+//     title: string;
+//     breadcrumb: string;
+//     content: string;
+//     downloadLinks: {
+//       pdf: string;
+//       doc: string;
+//     };
+//   }
+
+import { sl, sm, waste_management } from "@/src/assets/home";
+import { coroprate_canteen, landscaping, payroll, pestcontrol, sanitation, technical_servises } from "@/src/assets/service";
+
+  
+//   export const sectionsData: Record<string, SectionData> = {
+//     contact: {
+//       title: 'Contact us',
+//       breadcrumb: 'Home > Contacts',
+//       content: `Contact us content goes here...`,
+//       downloadLinks: {
+//         pdf: '/path/to/contact.pdf',
+//         doc: '/path/to/contact.doc',
+//       },
+//     },
+    // services: {
+    //   title: 'Facility Management Service',
+    //   breadcrumb: 'Home > Services',
+    //   content: `
+    //     Mr Corporate is a full-spectrum integrated facilities management company which provide cutting edge and latest facility management service across India. 
+    //     Our integrated facilities management paradigm is driven by our highly trained proficient staff, innovative systems, universal quality standards. 
+    //     We run for Excellence with customised, flexible and competitive services. Mr corporate will be the one-stop destination for all your facility management need.
+        
+    //     Our Services Include:
+    //     - Housekeeping
+    //     - Pantry Services
+    //     - Waste Management
+    //     - Warehouse Management
+    //     - Pest Management Services
+    //     - Guest House Management
+    //   `,
+//       downloadLinks: {
+//         pdf: '/path/to/services.pdf',
+//         doc: '/path/to/services.doc',
+//       },
+//     },
+//     // Add more sections as needed
+//   };
+  
+// utils/section/sectiondata.ts
+export interface SectionData {
+  title: string;
+  breadcrumb: string;
+  content: string;
+  details: any; // Made details optional
+  downloadLinks?: {
+    pdf: string;
+    doc: string;
+  };
+  image?: any;
+}
+
+export const sectionsData: Record<string, SectionData> = {
+  'facility-management': {
+    title: 'Facility Management',
+    breadcrumb: 'Facility Management',
+    content: `MR Corporate is a comprehensive, full-spectrum integrated facilities management company dedicated to delivering cutting-edge facility management services across India. Our unique approach to facilities management is underpinned by a combination of expertly trained, highly proficient staff, innovative systems, and rigorous adherence to universal quality standards. This enables us to offer tailored, flexible, and cost-effective solutions designed to meet the diverse needs of our clients.
+
+We pride ourselves on being a one-stop destination for all your facility management requirements. Our team of experienced professionals is committed to utilizing eco-friendly products and adhering to industry best practices to ensure that every service we provide aligns with our clients' highest expectations. By integrating advanced technologies with our deep industry knowledge, we strive to deliver superior service quality, reliability, and efficiency. Our facilities management paradigm is designed to enhance operational efficiency, reduce costs, and ensure that your facilities are maintained to the highest standards.`,
+    details: `Our Services Include:
+        - Housekeeping
+        - Pantry Services
+        - Waste Management
+        - Warehouse Management
+        - Pest Management Services
+        - Guest House Management
+        `,
+    downloadLinks: {
+      pdf: '/downloads/facility-management.pdf',
+      doc: '/downloads/facility-management.doc'
+    },
+     image: sm
+  },
+  'senior-management': {
+    title: 'Senior Management',
+    breadcrumb: 'Ship Management',
+    content: 'The maritime industry requires specialized expertise to manage the complex operations of ships and fleets. Our ship management services are designed to provide end-to-end solutions that cover every aspect of maritime operations. From crew management and vessel maintenance to safety compliance and logistics support, we ensure that your vessels are always in top condition and ready to sail. Our experienced team understands the unique challenges of the maritime industry and works closely with you to develop customized solutions that maximize efficiency and minimize downtime. With our ship management services, you can navigate the high seas with confidence, knowing that your fleet is in capable hands',
+    details: `Our Services Include:
+        - Housekeeping
+        - Pantry Services
+        `,
+    downloadLinks: {
+      pdf: '/downloads/ship-management.pdf',
+      doc: '/downloads/ship-management.doc'
+    },
+     image: sl
+  },
+  'payroll-management': {
+    title: 'Payroll Management',
+    breadcrumb: 'Payroll Management',
+    content: 'We provide payroll management solutions that streamline business payroll processes and improve efficiency. Our comprehensive services simplify payroll management, ensuring accuracy, timeliness, and cost-effectiveness. With expertise in payroll processing, compliance, and employee management, we help businesses focus on their core operations.Our user-friendly software offers seamless employee onboarding, accurate attendance tracking, customized salary components, and flexible salary disbursement options. It ensures compliance with statutory requirements and simplifies exit, leave, and reimbursement processes.Suitable for businesses of all sizes, our tailored services and adaptable software ensure efficient and compliant payroll processes, allowing businesses to concentrate on growth and strategic initiatives.',
+    details: `Our Services Include:
+        - Onboarding
+        - Compliance Features
+        - Attendance Tracking
+        - Leave And Claims
+        - Salary Customization
+        - Tax Planning
+        - flexible Disbursement
+        - Benifits Administration
+        `,
+    downloadLinks: {
+      pdf: '/downloads/payroll-management.pdf',
+      doc: '/downloads/payroll-management.doc'
+    },
+     image: payroll
+  },
+  'waste-management': {
+    title: 'Waste Management',
+    breadcrumb: 'Waste Management',
+    content: 'We offer our services to recycle, treat and dispose of your waste to ensure that our clients ethical standards as well as regulatory requirements of. We offer comprehensive solutions accessing the needs of our clients to make the work placeclean and also clean and recover to values from the waste.',
+    details: `Our Services Include:
+        - Wet Bio-Degrable Waste
+        - Dry Recyclable Waste
+        - E-Waste
+        `,
+    downloadLinks: {
+      pdf: '/downloads/waste-management.pdf',
+      doc: '/downloads/waste-management.doc'
+    },
+    image: waste_management
+  },
+  'sanitation-service': {
+    title: 'Sanitation Service',
+    breadcrumb: 'Sanitation Service',
+    content: 'We offer our services to recycle, treat and dispose of your waste to ensure that our clients ethical standards as well as regulatory requirements of. We offer comprehensive solutions accessing the needs of our clients to make the work placeclean and also clean and recover to values from the waste.',
+    details: `Our Services Include:
+        - Sanitary Fixtures
+        - Garden Irrigation
+        - Pest Management Services
+        `,
+    downloadLinks: {
+      pdf: '/downloads/sanitation-service.pdf',
+      doc: '/downloads/sanitation-service.doc'
+    },
+     image: sanitation
+  },
+  'corporate-canteen': {
+    title: 'Corporate Canteen',
+    breadcrumb: 'Corporate Canteen',
+    content: 'A well-managed corporate canteen is an essential part of employee welfare, providing nutritious meals that fuel productivity and morale. Our corporate canteen management services are designed to offer a seamless dining experience that caters to the diverse tastes and dietary needs of your workforce. From menu planning and food preparation to service and hygiene, we take care of every aspect of canteen management. Our team of culinary experts works closely with you to create a menu that reflects your company’s culture and values while ensuring that meals are delicious and balanced. With our corporate canteen services, you can provide your employees with the nourishment they need to perform at their best.',
+    details: `Our Services Include:
+        - Housekeeping
+        - Pantry Services
+        - Waste Management
+        - Warehouse Management
+        - Pest Management Services
+        - Guest House Management
+        `,
+    downloadLinks: {
+      pdf: '/downloads/corporate-canteen.pdf',
+      doc: '/downloads/corporate-canteen.doc'
+    },
+     image: coroprate_canteen
+  },
+  'technical-services': {
+    title: 'Technical Services',
+    breadcrumb: 'Technical Services',
+    content: 'We take care of the operation, maintenance, inspection, and restoration of our clients offices and buildings. Our services include regular inspections and maintenance, as well as comprehensive rehabilitation efforts to ensure the safety and stability of these structures. We are committed to delivering the highest standards of care, ensuring that every building under our management remains in peak condition.Our experienced teams are composed of qualified professionals, including engineers, technicians, and experts from various domains. These specialists work collaboratively to develop and deploy a range of technical services that guarantee the smooth operation and long-term sustainability of building systems.',
+    details: `Our Services Include:
+        - Mechanical,Electrical & HVAC
+        - BMS
+        - Plumbing & Carpentry
+        - Water Treatment Systems
+        - Fire & Safety Systems
+        - Project Management
+        `,
+    downloadLinks: {
+      pdf: '/downloads/technical-services.pdf',
+      doc: '/downloads/technical-services.doc'
+    },
+     image: technical_servises
+  },
+  'landscaping': {
+    title: 'Landscaping',
+    breadcrumb: 'Landscaping',
+    content: 'A well-maintained landscape not only enhances the aesthetic appeal of your property but also contributes to a positive environment. Our landscaping services are designed to create beautiful, sustainable outdoor spaces that reflect your company’s image and values. From garden design and installation to ongoing maintenance and irrigation, we offer a comprehensive range of landscaping solutions that meet your specific needs. Our team of experienced landscapers works closely with you to develop a customized plan that brings your vision to life. With our landscaping services, you can create an outdoor environment that is both beautiful and sustainable.',
+    details: ``,
+    downloadLinks: {
+      pdf: '/downloads/landscaping.pdf',
+      doc: '/downloads/landscaping.doc'
+    },
+     image: landscaping
+  },
+  'pestcontrol': {
+    title: 'Pest Control',
+    breadcrumb: 'Pest Control',
+    content: 'Soft Services with adequate and trained uniformed manpower. We use latest equipment and branded chemicals for cleaning of clients commercial & non-commercial buildings, educational institutions, and government and non-government companies.',
+    details: `Our Services Include:
+        - Comprehensive Inspections
+        -  Customized Treatment Plans
+        - Eco-Friendly Products
+        - Warehouse Management
+        - Pest Management Services
+        - Guest House Management
+        `,
+    downloadLinks: {
+      pdf: '/downloads/staffing-solution.pdf',
+      doc: '/downloads/staffing-solution.doc'
+    },
+     image: pestcontrol
+  }
+};
+
+export default sectionsData;
