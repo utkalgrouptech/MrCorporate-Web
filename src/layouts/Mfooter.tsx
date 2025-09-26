@@ -45,7 +45,7 @@ const footerLinks = [
     info: [
       {
         icon: <LocationOnIcon className='text-orange-500' />,
-        text: "Head Office: HIG-42, Ekamra Vihar, Jayadev Vihar, Bhubaneswar, Odisha 751015",
+        text: "Head Office: Arya Surya Enclave, Plot No- K5/475, Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur, Kalinga Vihar, Patrapada, Bhuabneswar, Dist- Khurda, Odisha, India-751019.",
       },
       {
         icon: <MailOutlineIcon className='text-orange-500' />,

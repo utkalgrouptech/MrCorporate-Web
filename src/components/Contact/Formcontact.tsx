@@ -90,7 +90,7 @@ const Formcontact: React.FC = () => {
             {/* Map */}
             <div className="mb-8">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.9488586684915!2d85.82384800033974!3d20.29794216863871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909c2e0bca259%3A0x40a41333187f97c!2sGandhi%20Institute%20of%20Excellent%20Technocrats%2C%20GIET%20Bhubaneswar!5e0!3m2!1sen!2sin!4v1738151701390!5m2!1sen!2sin" className='w-full h-full' referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d412.66028536560367!2d85.75513660966763!3d20.244715835556402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a9f84571a633%3A0x600f47c59a3bcf8!2sUtkal%20Group%20of%20Companies!5e1!3m2!1sen!2sin!4v1743144349889!5m2!1sen!2sin" className='w-full h-full' referrerPolicy="no-referrer-when-downgrade"
                 width="100%"
                 height="250"
                 style={{ border: 0 }}
@@ -103,10 +103,10 @@ const Formcontact: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <h3 className="text-lg font-bold text-white mb-2">Company Address</h3>
-                <p className="text-white "> Head Office:, HIG-42,</p>
-                <p className="text-white ">Ground Floor, Ekamra Vihar, </p>
-                <p className="text-white ">Jayadev Vihar, Bhubaneswar,</p>
-                <p className="text-white ">Odisha 751015</p>
+                <p className="text-white "> Head Office:Arya Surya Enclave, Plot No- K5/475</p>
+                <p className="text-white ">Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur, </p>
+                <p className="text-white "> Kalinga Vihar, Patrapada, Bhuabneswar,</p>
+                <p className="text-white ">Dist- Khurda, Odisha, India-751019.</p>
               </div>
               <div>
                 <h3 className="text-lg font-bold text-white mb-2">Contact Details</h3>
