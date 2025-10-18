@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { sectionsData, SectionData } from '../utils/section/sectiondata'; 
+import { sectionsData, SectionData } from '../utils/section/sectiondata';
 import { breadcrumb_img } from '../assets/About';
 import MainLayout from '../layouts/MainLayout';
 import { CheckCircleOutline, Download, ArrowBack, Share, CalendarToday, Person, LocationOn } from '@mui/icons-material';
@@ -16,7 +16,7 @@ const SectionPage: React.FC = () => {
                 <div className="text-center">
                     <h1 className="text-2xl font-bold text-gray-900 mb-4">Section Not Found</h1>
                     <p className="text-gray-600 mb-8">The requested service section could not be found.</p>
-                    <button 
+                    <button
                         onClick={() => router.push('/services')}
                         className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
                     >
@@ -37,7 +37,7 @@ const SectionPage: React.FC = () => {
                 <div className="text-center">
                     <h1 className="text-2xl font-bold text-gray-900 mb-4">Service Not Found</h1>
                     <p className="text-gray-600 mb-8">The requested service could not be found.</p>
-                    <button 
+                    <button
                         onClick={() => router.push('/services')}
                         className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
                     >
@@ -54,14 +54,14 @@ const SectionPage: React.FC = () => {
         .map((service: string) => service.replace(/^\s*-?\s*/, ''))
         .filter(Boolean);
 
-const handleDownload = (type: 'pdf' | 'doc') => {
-  if (!sectionData.downloadLinks) return; // safety check
+    const handleDownload = (type: 'pdf' | 'doc') => {
+        if (!sectionData.downloadLinks) return; // safety check
 
-  const link = document.createElement('a');
-  link.href = sectionData.downloadLinks[type];
-  link.download = `${sectionData.title.toLowerCase().replace(/\s+/g, '-')}.${type}`;
-  link.click();
-};
+        const link = document.createElement('a');
+        link.href = sectionData.downloadLinks[type];
+        link.download = `${sectionData.title.toLowerCase().replace(/\s+/g, '-')}.${type}`;
+        link.click();
+    };
 
 
     const handleShare = async () => {
@@ -87,15 +87,15 @@ const handleDownload = (type: 'pdf' | 'doc') => {
             {/* Breadcrumb Section */}
             <section className="relative bg-gray-900 py-20">
                 <div className="absolute inset-0">
-                    <img 
-                        src={breadcrumb_img.src} 
-                        alt="Service Background" 
-                        className="w-full h-full object-cover opacity-20" 
+                    <img
+                        src={breadcrumb_img.src}
+                        alt="Service Background"
+                        className="w-full h-full object-cover opacity-20"
                     />
                 </div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center space-x-2 text-sm text-gray-300 mb-6">
-                        <button 
+                        <button
                             onClick={() => router.push('/services')}
                             className="flex items-center space-x-1 hover:text-white transition-colors duration-300"
                         >
@@ -105,7 +105,7 @@ const handleDownload = (type: 'pdf' | 'doc') => {
                         <span>/</span>
                         <span className="text-white font-medium">{sectionData.title}</span>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         <div>
                             <div className="inline-flex items-center px-4 py-2 bg-orange-600 text-white rounded-full text-sm font-medium mb-4">
@@ -117,16 +117,16 @@ const handleDownload = (type: 'pdf' | 'doc') => {
                             <p className="text-xl text-gray-300 leading-relaxed mb-8">
                                 Comprehensive facility management solutions tailored to your business needs
                             </p>
-                            
+
                             <div className="flex flex-wrap gap-4">
-                                <button 
+                                <button
                                     onClick={() => handleDownload('pdf')}
                                     className="flex items-center space-x-2 bg-white text-gray-900 px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors duration-300 font-semibold"
                                 >
                                     <Download className="w-5 h-5" />
                                     <span>Download PDF</span>
                                 </button>
-                                <button 
+                                <button
                                     onClick={handleShare}
                                     className="flex items-center space-x-2 bg-transparent border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition-colors duration-300"
                                 >
@@ -135,7 +135,7 @@ const handleDownload = (type: 'pdf' | 'doc') => {
                                 </button>
                             </div>
                         </div>
-                        
+
                         <div className="relative">
                             <div className="bg-white rounded-2xl p-2 shadow-2xl">
                                 <img
@@ -168,7 +168,7 @@ const handleDownload = (type: 'pdf' | 'doc') => {
                             <div className="mt-12">
                                 <h2 className="text-3xl font-bold text-gray-900 mb-8">Services Included</h2>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    {services.map((service:string, index:number) => (
+                                    {services.map((service: string, index: number) => (
                                         <div key={index} className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg hover:bg-orange-50 transition-colors duration-300">
                                             <CheckCircleOutline className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                                             <span className="text-gray-700 font-medium">{service}</span>
@@ -212,14 +212,14 @@ const handleDownload = (type: 'pdf' | 'doc') => {
                             <div className="bg-blue-50 rounded-2xl p-6 border border-orange-200">
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">Download Resources</h3>
                                 <div className="space-y-3">
-                                    <button 
+                                    <button
                                         onClick={() => handleDownload('pdf')}
                                         className="w-full flex items-center justify-between p-3 bg-white rounded-lg border border-gray-300 hover:border-orange-500 transition-colors duration-300"
                                     >
                                         <span className="text-gray-700 font-medium">Service Brochure</span>
                                         <Download className="w-5 h-5 text-orange-600" />
                                     </button>
-                                    <button 
+                                    <button
                                         onClick={() => handleDownload('doc')}
                                         className="w-full flex items-center justify-between p-3 bg-white rounded-lg border border-gray-300 hover:border-orange-500 transition-colors duration-300"
                                     >
@@ -235,7 +235,7 @@ const handleDownload = (type: 'pdf' | 'doc') => {
                                 <p className="text-gray-300 mb-6">
                                     Contact us for a customized facility management solution
                                 </p>
-                                <button 
+                                <button
                                     onClick={() => router.push('/contact')}
                                     className="w-full bg-orange-600 text-white py-3 rounded-lg hover:bg-orange-700 transition-colors duration-300 font-semibold"
                                 >
@@ -264,7 +264,7 @@ const handleDownload = (type: 'pdf' | 'doc') => {
                             .filter(([key]) => key !== formattedSection)
                             .slice(0, 3)
                             .map(([key, service]) => (
-                                <div 
+                                <div
                                     key={key}
                                     className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden group cursor-pointer"
                                     onClick={() => router.push(`/services/${key}`)}
