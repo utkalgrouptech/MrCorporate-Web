@@ -1,3 +1,4 @@
+// src/components/ServicesSection.jsx
 import { service_img } from '@/src/assets/home';
 import { cardArr } from '@/src/utils/home';
 import React from 'react';
@@ -10,48 +11,42 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  speed: 1000, // Smooth transition
-  autoplaySpeed: 5000, // Adjust autoplay speed to match transition speed
+  speed: 1000,
+  autoplaySpeed: 5000,
   cssEase: "ease-in-out",
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2, // For medium screens
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1, // For small screens
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
   ],
 };
 
-export default function Service() {
+export default function ServicesSection() {
   return (
-    <section
-      className="w-full py-16 relative bg-cover bg-center"
-      style={{
-        backgroundImage: `url(${service_img.src})`,
-      }}
-    >
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60"></div>
-
-      {/* Main Container */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-12">
-        {/* Section Heading */}
-        <div className="text-center">
-          <h1 className="text-3xl md:text-4xl font-extrabold capitalize bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-600 shadow-lg">
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-4">
             Our Services
-          </h1>
-          <h4 className="text-[#ee7623] text-2xl md:text-5xl font-extrabold capitalize mt-2 tracking-wide shadow-xl">
-            Corporate Services
-          </h4>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Comprehensive Facility <span className="text-orange-600">Solutions</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Professional facility management services tailored to your business needs
+          </p>
         </div>
 
         {/* Service Cards Slider */}
@@ -63,6 +58,13 @@ export default function Service() {
               </div>
             ))}
           </Slider>
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center mt-12">
+          <button className="bg-orange-600 text-white px-8 py-4 rounded-lg hover:bg-orange-700 transition-colors duration-300 font-semibold shadow-lg">
+            View All Services
+          </button>
         </div>
       </div>
     </section>

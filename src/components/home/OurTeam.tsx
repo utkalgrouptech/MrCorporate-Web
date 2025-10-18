@@ -1,51 +1,70 @@
+// src/components/TeamSection.jsx
 import React from "react";
 import { teamData } from "@/src/utils/home";
-import { Phone, Email } from "@mui/icons-material";
+import { Phone, Email, LinkedIn } from "@mui/icons-material";
 
-const MeetOurTeam: React.FC = () => {
+const TeamSection = () => {
   return (
-    <section className="py-24 bg-gradient-to-tr from-[#ee7623] to-[#282461] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex justify-between items-center mb-8">
-          <div>
-            <p className="text-orange-500 text-2xl font-semibold">Insights & Stories</p>
-            <h2 className="text-4xl font-bold text-[#282461]">Meet Our Team</h2>
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-4">
+            Our Team
           </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Meet Our <span className="text-orange-600">Experts</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Dedicated professionals committed to delivering exceptional facility management services
+          </p>
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamData.map((member, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center hover:shadow-xl transition duration-300"
+              className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden group"
             >
-              <img
-                src={member.image.src}
-                alt={member.name}
-                className="w-32 h-32 object-cover rounded-full mb-4"
-              />
-              <h3 className="text-lg font-bold">{member.name}</h3>
-              <p className="text-orange-500 text-sm">{member.role}</p>
-              {/* Contact Icons */}
-              <div className="flex space-x-4 mt-4">
-                {member.phone && (
+              <div className="relative overflow-hidden">
+                <img
+                  src={member.image.src}
+                  alt={member.name}
+                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-orange-600/0 group-hover:bg-orange-600/20 transition-colors duration-300"></div>
+              </div>
+              
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
+                <p className="text-orange-600 font-medium mb-4">{member.role}</p>
+                
+                {/* Contact Icons */}
+                <div className="flex justify-center space-x-4">
+                  {member.phone && (
+                    <a
+                      href={member.phone}
+                      className="text-gray-400 hover:text-orange-600 transition-colors duration-300"
+                    >
+                      <Phone className="w-5 h-5" />
+                    </a>
+                  )}
+                  {member.email && (
+                    <a
+                      href={member.email}
+                      className="text-gray-400 hover:text-orange-600 transition-colors duration-300"
+                    >
+                      <Email className="w-5 h-5" />
+                    </a>
+                  )}
                   <a
-                    href={member.phone}
-                    className="text-gray-600 hover:text-orange-500"
+                    href="#"
+                    className="text-gray-400 hover:text-orange-600 transition-colors duration-300"
                   >
-                    <Phone />
+                    <LinkedIn className="w-5 h-5" />
                   </a>
-                )}
-                {member.email && (
-                  <a
-                    href={member.email}
-                    className="text-gray-600 hover:text-orange-500"
-                  >
-                    <Email />
-                  </a>
-                )}
+                </div>
               </div>
             </div>
           ))}
@@ -55,4 +74,4 @@ const MeetOurTeam: React.FC = () => {
   );
 };
 
-export default MeetOurTeam;
+export default TeamSection;

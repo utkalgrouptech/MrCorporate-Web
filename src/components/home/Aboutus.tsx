@@ -1,100 +1,85 @@
+// src/components/AboutCompany.jsx
 import React from "react";
 import { featuresData } from "@/src/utils/home"; 
 import { aboutus } from "@/src/assets/home";
 
-const AboutCompany: React.FC = () => {
+const AboutCompany = () => {
   return (
-    <section className="py-12 px-6 bg-gradient-to-t from-[#ee7623] to-[#282461]">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Intro Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div>
-            <p className="text-orange-500 font-semibold">We Are MRCORPORATE</p>
-            <h2 className="text-4xl font-bold mb-4">About our Company</h2>
-            <p className="text-red-100 mb-4">
-              MR Corporate Facilities Services is an independent leader in
-              delivering integrated facilities management services across India.
-              For more than 15 years, MR Corporate has been well acknowledged
-              for providing quality services to some of the biggest regional
-              names, including leading multinationals.
-            </p>
-            <p className="text-amber-100">
-              Since 2009, the company has expanded its diversified clientele
-              through its service offerings across the region. Our teams are
-              experienced in delivering single, multi, or total facilities
-              management services to clients of all sizes from all market
-              sectors. Providing expert operation and management services for
-              ports and airports, with a focus on safety, technological
-              integration, and efficiency.
-            </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="space-y-6">
+            <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-4">
+              About MRCORPORATE
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Leading Facility Management <span className="text-orange-600">Solutions</span>
+            </h2>
+            <div className="space-y-4 text-gray-600 leading-relaxed text-justify">
+              <p>
+                MR Corporate Facilities Services is an independent leader in delivering 
+                integrated facilities management services across India. For more than 
+                15 years, we have been trusted by leading multinationals and regional 
+                names for excellence in service delivery.
+              </p>
+              <p>
+                Since 2009, we have expanded our diversified clientele through comprehensive 
+                service offerings. Our expert teams specialize in single, multi, or total 
+                facilities management with a focus on safety, technology, and efficiency.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-6 pt-6">
+              <div className="text-center p-4 bg-gray-50 rounded-lg">
+                <div className="text-2xl font-bold text-orange-600 mb-1">15+</div>
+                <div className="text-sm text-gray-600">Years Experience</div>
+              </div>
+              <div className="text-center p-4 bg-gray-50 rounded-lg">
+                <div className="text-2xl font-bold text-orange-600 mb-1">500+</div>
+                <div className="text-sm text-gray-600">Projects Done</div>
+              </div>
+            </div>
           </div>
+          
           <div className="relative">
-            <img
-              src={aboutus.src} // Replace with an actual image URL
-              alt="About Us"
-              className="rounded-lg shadow-lg"
-            />
+            <div className="bg-gray-200 rounded-2xl overflow-hidden">
+              <img
+                src={aboutus.src}
+                alt="About MR Corporate"
+                className="w-full h-96 object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-6 -right-6 bg-orange-600 text-white p-6 rounded-2xl shadow-xl">
+              <div className="text-2xl font-bold">15+ Years</div>
+              <div className="text-sm">Industry Experience</div>
+            </div>
           </div>
         </div>
 
         {/* Features Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-  {featuresData.map((feature, index) => (
-    <div
-      key={index}
-      className="
-        relative flex items-start p-6 bg-white rounded-lg shadow-lg 
-        overflow-hidden group transition-all duration-500 ease-in-out"
-    >
-      {/* Blue Stain in the Bottom Right */}
-      <div
-        className="
-          absolute bottom-[-100px] right-[-100px] w-[150px] h-[150px] 
-          bg-[#282461] rounded-full pointer-events-none 
-          transition-transform duration-500 ease-in-out transform 
-          scale-100 group-hover:scale-[10]"
-      ></div>
-
-      {/* Card Background Overlay for Hover Effect */}
-      <div
-        className="
-          absolute inset-0 bg-[#ee7623] z-0 
-          opacity-0 group-hover:opacity-100 
-          transition-opacity duration-500"
-      ></div>
-
-      {/* Card Content */}
-      <div className="relative z-10 flex items-start space-x-4">
-        {/* Icon with Orange Background */}
-        <div
-          className="
-            bg-orange-500 text-white p-4 rounded-full 
-            flex items-center justify-center transition-transform duration-500 
-            ease-in-out group-hover:scale-110"
-        >
-          {feature.icon}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {featuresData.map((feature, index) => (
+            <div
+              key={index}
+              className="group p-8 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
+            >
+              <div className="flex items-start space-x-4">
+                <div className="bg-orange-100 text-orange-600 p-3 rounded-xl group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+                  {feature.icon}
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors duration-300">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-        <div>
-          <h3
-            className="
-              text-lg font-bold mb-2 text-gray-800 group-hover:text-white 
-              transition-colors duration-500"
-          >
-            {feature.title}
-          </h3>
-          <p
-            className="
-              text-gray-600 group-hover:text-white 
-              transition-colors duration-500"
-          >
-            {feature.description}
-          </p>
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
-
       </div>
     </section>
   );

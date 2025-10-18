@@ -21,38 +21,38 @@ const footerLinks = [
     ],
   },
   {
-    title: "Important",
+    title: "Services",
     links: [
-      { href: "/contact", label: "Our Process" },
-      { href: "/contact", label: "Appointment" },
-      { href: "/contact", label: "FAQ" },
-      { href: "/contact", label: "Privacy Policy" },
-      { href: "/contact", label: "Terms & Conditions" },
+      { href: "/services", label: "Facility Management" },
+      { href: "/services", label: "Maintenance" },
+      { href: "/services", label: "Security Services" },
+      { href: "/services", label: "Cleaning Services" },
+      { href: "/services", label: "Technical Support" },
     ],
   },
   {
     title: "Quick Links",
     links: [
-      { href: "/contact", label: "Why Choose Us" },
-      { href: "/contact", label: "Pricing Plan" },
-      { href: "/contact", label: "News & Articles" },
-      { href: "/contact", label: "Login" },
-      { href: "/contact", label: "Subscribe" },
+      { href: "/why-choose-us", label: "Why Choose Us" },
+      { href: "/pricing", label: "Pricing Plan" },
+      { href: "/blog", label: "News & Articles" },
+      { href: "/login", label: "Client Portal" },
+      { href: "/contact", label: "Get Quote" },
     ],
   },
   {
-    title: "Official Info",
+    title: "Contact Info",
     info: [
       {
-        icon: <LocationOnIcon className='text-orange-500' />,
-        text: "Head Office: HIG-42, Ekamra Vihar, Jayadev Vihar, Bhubaneswar, Odisha 751015",
+        icon: <LocationOnIcon className='text-blue-600' />,
+        text: "Head Office: Plot No- K5/475,Fourth Floor,Kalinga Vihar, Patrapada, Bhuabneswar, Dist- Khurda, Odisha, India-751019.",
       },
       {
-        icon: <MailOutlineIcon className='text-orange-500' />,
+        icon: <MailOutlineIcon className='text-blue-600' />,
         text: "Email: info@mrcorporate.in",
       },
       {
-        icon: <CallIcon className='text-orange-500' />,
+        icon: <CallIcon className='text-blue-600' />,
         text: "Phone: +91 8260500785",
       },
     ],
@@ -61,63 +61,152 @@ const footerLinks = [
 
 export default function Mfooter() {
   return (
-    <footer className="bg-gradient-to-br from-[#ee7623] to-[#282461] py-20 relative mb-4">
+    <footer className="bg-amber-50 py-20 relative border-t border-amber-200">
       {/* Subscription Banner */}
-      <div className="absolute inset-x-0 -top-14 flex justify-center w-full">
-  <div className="bg-orange-500 text-white rounded-full shadow-lg w-full max-w-4xl py-6 px-8 flex items-center justify-between flex-wrap lg:flex-nowrap">
-    <span className="text-lg font-semibold mr-4 mb-4 lg:mb-0">Subscribe for Exclusive Updates!</span>
-    <div className="relative flex-grow w-full lg:w-auto">
-      <input
-        type="email"
-        placeholder="Enter your email"
-        className="p-3 border border-gray-300 rounded-full outline-none w-full"
-      />
-      <button className="absolute right-0 top-0 bottom-0 bg-orange-600 text-white rounded-full px-4 hover:bg-orange-700 transition-colors mt-2 lg:mt-0">
-        Subscribe
-      </button>
-    </div>
-  </div>
-</div>
-      
-      {/* Footer Content */}
-      <div className="relative mt-24 mx-auto px-4 max-w-screen-xl flex flex-col lg:flex-row">
-        {/* Logo and Contact */}
-        <div className="w-full lg:w-1/4 mb-8 lg:mb-0 text-center lg:text-left">
-          <img src={footer_logo.src} alt="Logo" className="h-12 w-auto mb-4 mx-auto lg:mx-0" />
-          <p className='text-white mb-4'>One Stop Solutions For All Your Facility Management Needs</p>
-          <p className='text-white mb-4'>Email us at: <a href="mailto:info@mrcorporate.in" className="text-blue-500 hover:underline">info@mrcorporate.in</a></p>
-          <div className='flex justify-center lg:justify-start items-center mb-4'>
-            <p className='text-white mr-3'>Follow us:</p>
-            <div className='flex gap-4'>
-              <Link href="https://www.facebook.com/profile.php?id=61564734578439"><FacebookRoundedIcon className='text-white hover:text-gray-900' /></Link>
-              <Link href="https://twitter.com"><TwitterIcon className='text-white hover:text-gray-900' /></Link>
-              <Link href="https://pinterest.com"><PinterestIcon className='text-white hover:text-gray-900' /></Link>
-              <Link href="https://linkedin.com"><LinkedInIcon className='text-white hover:text-gray-900' /></Link>
+      <div className="absolute inset-x-0 -top-8 flex justify-center w-full px-4">
+        <div className="bg-white text-gray-800 rounded-2xl shadow-lg w-full max-w-4xl py-6 px-8 flex flex-col lg:flex-row items-center justify-between border border-gray-200">
+          <div className="text-center lg:text-left mb-4 lg:mb-0">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Stay Updated</h3>
+            <p className="text-gray-600">Get the latest facility management insights</p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+            <div className="relative flex-grow">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full p-4 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
+              />
             </div>
+            <button className="bg-orange-600 text-white px-8 py-4 rounded-lg hover:bg-orange-700 transition-colors duration-300 font-semibold whitespace-nowrap shadow-lg">
+              Subscribe
+            </button>
           </div>
         </div>
-        
-        {/* Footer Links */}
-        <div className="w-full lg:w-3/4 flex flex-wrap justify-between">
+      </div>
+      
+      {/* Footer Content */}
+      <div className="mt-24 mx-auto px-4 max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-6 gap-8">
+          {/* Logo and Description */}
+          <div className="xl:col-span-2">
+            <div className="mb-6">
+              <img src={footer_logo.src} alt="MR Corporate Logo" className="h-12 w-auto mb-4" />
+              <p className="text-gray-700 leading-relaxed mb-6">
+                One Stop Solutions For All Your Facility Management Needs. 
+                Professional, reliable, and comprehensive facility services 
+                tailored to your business requirements.
+              </p>
+            </div>
+            
+            {/* Contact Info */}
+            <div className="space-y-3">
+              <div className="flex items-center">
+                <MailOutlineIcon className="text-blue-600 mr-3" />
+                <a 
+                  href="mailto:info@mrcorporate.in" 
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+                >
+                  info@mrcorporate.in
+                </a>
+              </div>
+              <div className="flex items-center">
+                <CallIcon className="text-blue-600 mr-3" />
+                <a 
+                  href="tel:+918260500785" 
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+                >
+                  +91 8260500785
+                </a>
+              </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="mt-6">
+              <p className="text-gray-700 font-semibold mb-3">Follow Us</p>
+              <div className="flex gap-3">
+                <Link 
+                  href="https://www.facebook.com/profile.php?id=61564734578439"
+                  className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:bg-blue-50 border border-gray-200"
+                >
+                  <FacebookRoundedIcon className='text-blue-600 hover:text-blue-700' />
+                </Link>
+                <Link 
+                  href="https://twitter.com"
+                  className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:bg-blue-50 border border-gray-200"
+                >
+                  <TwitterIcon className='text-blue-500 hover:text-blue-600' />
+                </Link>
+                <Link 
+                  href="https://pinterest.com"
+                  className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:bg-blue-50 border border-gray-200"
+                >
+                  <PinterestIcon className='text-red-600 hover:text-red-700' />
+                </Link>
+                <Link 
+                  href="https://linkedin.com"
+                  className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:bg-blue-50 border border-gray-200"
+                >
+                  <LinkedInIcon className='text-blue-700 hover:text-blue-800' />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Footer Links */}
           {footerLinks.map((section, index) => (
-            <div key={index} className="w-full lg:w-1/4 mb-10 lg:mb-0">
-              <h3 className="text-white mb-4 font-bold capitalize">{section.title}</h3>
+            <div key={index} className="xl:col-span-1">
+              <h3 className="text-gray-900 font-bold text-lg mb-6 pb-2 border-b border-amber-200">
+                {section.title}
+              </h3>
               {section.links ? (
-                section.links.map((link, idx) => (
-                  <p key={idx} className='mb-2'>
-                    <Link href={link.href} className="text-white hover:text-gray-600">{link.label}</Link>
-                  </p>
-                ))
+                <div className="space-y-3">
+                  {section.links.map((link, idx) => (
+                    <div key={idx}>
+                      <Link 
+                        href={link.href} 
+                        className="text-gray-700 hover:text-blue-600 transition-colors duration-300 block py-1"
+                      >
+                        {link.label}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
               ) : (
-                section.info.map((infoItem, idx) => (
-                  <div key={idx} className="flex items-start mb-4">
-                    {infoItem.icon}
-                    <p className="text-white ml-2">{infoItem.text}</p>
-                  </div>
-                ))
+                <div className="space-y-4">
+                  {section.info.map((infoItem, idx) => (
+                    <div key={idx} className="flex items-start">
+                      <div className="mt-1 mr-3 flex-shrink-0">
+                        {infoItem.icon}
+                      </div>
+                      <p className="text-gray-700 text-sm leading-relaxed">
+                        {infoItem.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               )}
             </div>
           ))}
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-12 pt-8 border-t border-amber-200">
+          <div className="flex flex-col lg:flex-row justify-between items-center">
+            <p className="text-gray-600 text-sm mb-4 lg:mb-0">
+              © {new Date().getFullYear()} MR Corporate Facilities Services. All rights reserved.
+            </p>
+            <div className="flex gap-6 text-sm">
+              <Link href="/privacy-policy" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                Privacy Policy
+              </Link>
+              <Link href="/terms-conditions" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                Terms & Conditions
+              </Link>
+              <Link href="/sitemap" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                Sitemap
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
