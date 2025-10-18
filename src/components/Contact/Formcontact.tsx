@@ -168,80 +168,6 @@ const ContactFormSection: React.FC = () => {
             </form>
           </div>
 
-<<<<<<< HEAD
-          {/* Contact Information & Map */}
-          <div className="space-y-8">
-            {/* Contact Information */}
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
-              
-              <div className="space-y-6">
-                {/* Phone */}
-                <div className="flex items-start space-x-4">
-                  <div className="bg-orange-100 p-3 rounded-xl">
-                    <Phone className="w-6 h-6 text-orange-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                    <a href="tel:+918260500785" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
-                      +91 8260500785
-                    </a>
-                    <p className="text-sm text-gray-500 mt-1">Mon-Fri from 8am to 6pm</p>
-                  </div>
-                </div>
-
-                {/* Email */}
-                <div className="flex items-start space-x-4">
-                  <div className="bg-orange-100 p-3 rounded-xl">
-                    <Email className="w-6 h-6 text-orange-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <a href="mailto:info@mrcorporate.in" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
-                      info@mrcorporate.in
-                    </a>
-                    <p className="text-sm text-gray-500 mt-1">We&apos;ll respond within 24 hours</p>
-                  </div>
-                </div>
-
-                {/* Address */}
-                <div className="flex items-start space-x-4">
-                  <div className="bg-orange-100 p-3 rounded-xl">
-                    <LocationOn className="w-6 h-6 text-orange-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Head Office</h4>
-                    <p className="text-gray-600">
-                      Arya Surya Enclave, Plot No- K5/475, Khata No 95/937<br />
-                      Fourth Floor, Mouza-Subudhi Pur, Kalinga Vihar<br />
-                      Patrapada, Bhubaneswar, Dist- Khurda<br />
-                      Odisha, India-751019
-                    </p>
-                  </div>
-                </div>
-
-                {/* Business Hours */}
-                <div className="flex items-start space-x-4">
-                  <div className="bg-orange-100 p-3 rounded-xl">
-                    <AccessTime className="w-6 h-6 text-orange-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Business Hours</h4>
-                    <p className="text-gray-600">
-                      Monday - Friday: 9:00 AM - 6:00 PM<br />
-                      Saturday: 9:00 AM - 2:00 PM<br />
-                      Sunday: Closed
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Map */}
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
-              <div className="p-6 border-b border-gray-200">
-                <h3 className="text-xl font-bold text-gray-900">Our Location</h3>
-=======
           {/* Company Location */}
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Company Location</h2>
@@ -265,7 +191,6 @@ const ContactFormSection: React.FC = () => {
                 <p className="text-white ">Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur, </p>
                 <p className="text-white "> Kalinga Vihar, Patrapada, Bhuabneswar,</p>
                 <p className="text-white ">Dist- Khurda, Odisha, India-751019.</p>
->>>>>>> 8795af2d38582bb14b7797a2b6e0d4bb1410899d
               </div>
               <div className="h-80">
                 <iframe
