@@ -168,6 +168,7 @@ const ContactFormSection: React.FC = () => {
             </form>
           </div>
 
+<<<<<<< HEAD
           {/* Contact Information & Map */}
           <div className="space-y-8">
             {/* Contact Information */}
@@ -240,6 +241,31 @@ const ContactFormSection: React.FC = () => {
             <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
               <div className="p-6 border-b border-gray-200">
                 <h3 className="text-xl font-bold text-gray-900">Our Location</h3>
+=======
+          {/* Company Location */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Company Location</h2>
+            {/* Map */}
+            <div className="mb-8">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d412.66028536560367!2d85.75513660966763!3d20.244715835556402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a9f84571a633%3A0x600f47c59a3bcf8!2sUtkal%20Group%20of%20Companies!5e1!3m2!1sen!2sin!4v1743144349889!5m2!1sen!2sin" className='w-full h-full' referrerPolicy="no-referrer-when-downgrade"
+                width="100%"
+                height="250"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                title="Company Location Map"
+              ></iframe>
+            </div>
+            {/* Address & Contact Details */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-lg font-bold text-white mb-2">Company Address</h3>
+                <p className="text-white "> Head Office:Arya Surya Enclave, Plot No- K5/475</p>
+                <p className="text-white ">Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur, </p>
+                <p className="text-white "> Kalinga Vihar, Patrapada, Bhuabneswar,</p>
+                <p className="text-white ">Dist- Khurda, Odisha, India-751019.</p>
+>>>>>>> 8795af2d38582bb14b7797a2b6e0d4bb1410899d
               </div>
               <div className="h-80">
                 <iframe

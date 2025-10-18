@@ -44,8 +44,13 @@ const footerLinks = [
     title: "Contact Info",
     info: [
       {
+<<<<<<< HEAD
         icon: <LocationOnIcon className='text-blue-600' />,
         text: "Head Office: Plot No- K5/475,Fourth Floor,Kalinga Vihar, Patrapada, Bhuabneswar, Dist- Khurda, Odisha, India-751019.",
+=======
+        icon: <LocationOnIcon className='text-orange-500' />,
+        text: "Head Office: Arya Surya Enclave, Plot No- K5/475, Khata No 95/937, Fourth Floor, Mouza-Subudhi Pur, Kalinga Vihar, Patrapada, Bhuabneswar, Dist- Khurda, Odisha, India-751019.",
+>>>>>>> 8795af2d38582bb14b7797a2b6e0d4bb1410899d
       },
       {
         icon: <MailOutlineIcon className='text-blue-600' />,
