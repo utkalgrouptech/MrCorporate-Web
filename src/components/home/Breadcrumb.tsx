@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { sliderArr } from "@/src/utils/home"; 
+import { sliderArr } from "@/src/utils/home";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
@@ -18,12 +18,12 @@ const settings = {
   autoplaySpeed: 6000,
   fade: true,
   dotsClass: "slick-dots custom-dots",
-  appendDots: (dots:any) => (
+  appendDots: (dots: any) => (
     <div className="mt-8">
       <ul className="flex justify-center space-x-2">{dots}</ul>
     </div>
   ),
-  customPaging: (i:any) => (
+  customPaging: (i: any) => (
     <div className="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-300 cursor-pointer"></div>
   )
 };
@@ -48,8 +48,8 @@ export default function ModernHeroSlider() {
         <div className="absolute -bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-gradient-to-r from-blue-500/20 to-cyan-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <Slider 
-        {...settings} 
+      <Slider
+        {...settings}
         beforeChange={(current, next) => setCurrentSlide(next)}
       >
         {sliderArr.map((item, index) => (
@@ -70,7 +70,7 @@ export default function ModernHeroSlider() {
               <div className="main-container px-4 sm:px-6 lg:px-8 xl:px-20">
                 <div className="max-w-2xl">
                   {/* Badge */}
-                  <div 
+                  <div
                     className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6"
                     data-aos="fade-down"
                     data-aos-delay="200"
@@ -80,7 +80,7 @@ export default function ModernHeroSlider() {
                   </div>
 
                   {/* Title */}
-                  <h1 
+                  <h1
                     className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
                     data-aos="fade-up"
                     data-aos-delay="300"
@@ -95,7 +95,7 @@ export default function ModernHeroSlider() {
                   </h1>
 
                   {/* Paragraph */}
-                  <p 
+                  <p
                     className="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-xl font-light"
                     data-aos="fade-up"
                     data-aos-delay="500"
@@ -104,7 +104,7 @@ export default function ModernHeroSlider() {
                   </p>
 
                   {/* CTA Buttons */}
-                  <div 
+                  <div
                     className="flex flex-col sm:flex-row gap-4 mb-8"
                     data-aos="fade-up"
                     data-aos-delay="700"
@@ -120,7 +120,7 @@ export default function ModernHeroSlider() {
                         <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </button>
                     </Link>
-                    
+
                     <button className="group px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-2xl hover:bg-white/10 hover:border-white/50 backdrop-blur-sm transition-all duration-300 transform hover:scale-105">
                       <span className="flex items-center">
                         Learn More
@@ -132,7 +132,7 @@ export default function ModernHeroSlider() {
                   </div>
 
                   {/* Stats */}
-                  <div 
+                  <div
                     className="flex flex-wrap gap-8 pt-8 border-t border-white/20"
                     data-aos="fade-up"
                     data-aos-delay="900"
