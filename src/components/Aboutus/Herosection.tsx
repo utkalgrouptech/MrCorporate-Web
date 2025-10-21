@@ -11,14 +11,14 @@ const Herosection: React.FC = () => {
           <div>
             <p className="text-orange-500 font-semibold">We Are MRCORPORATE</p>
             <h2 className="text-4xl font-bold mb-4">About our Company</h2>
-            <p className="text-white mb-4">
+            <p className="text-white mb-4 text-justify">
               MR Corporate Facilities Services is an independent leader in
               delivering integrated facilities management services across India.
               For more than 15 years, MR Corporate has been well acknowledged
               for providing quality services to some of the biggest regional
               names, including leading multinationals.
             </p>
-            <p className="text-white">
+            <p className="text-white text-justify">
               Since 2009, the company has expanded its diversified clientele
               through its service offerings across the region. Our teams are
               experienced in delivering single, multi, or total facilities
@@ -29,7 +29,7 @@ const Herosection: React.FC = () => {
             </p>
             <div className="mt-6">
               <p className="text-4xl font-bold mb-4">OUR MISSION</p>
-              <h1 className="text-white">To be the leading integrated facilities management service provider across PAN India, by adopting technology and innovation, which satisfies the needs and exceeds the expectations of our clients, business partners, and other stakeholders.</h1>
+              <h1 className="text-white text-justify">To be the leading integrated facilities management service provider across PAN India, by adopting technology and innovation, which satisfies the needs and exceeds the expectations of our clients, business partners, and other stakeholders.</h1>
             </div>
           </div>
           <div className="relative">
