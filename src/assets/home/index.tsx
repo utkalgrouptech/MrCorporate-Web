@@ -28,3 +28,5 @@ export {default as bc} from "./WhatsApp Image 2024-12-06 at 12.54.01_bcc8d9fa.jp
 export {default as aboutusnew} from "./aboutpic.jpeg"
 export {default as Pay} from "./payroll.png"
 export {default as picture12} from "./payrollpicture1.png"
+export {default as picture15} from "./wst.jpg"
+
