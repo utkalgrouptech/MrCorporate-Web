@@ -57,7 +57,10 @@ export interface SectionData {
     title: string;
     desc: string;
   }[];
-
+modelPoints?: {        
+    title: string;
+    desc: string;
+  }[];
   downloadLinks?: {
     pdf: string;
     doc: string;
@@ -103,7 +106,20 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
       desc: "Strict adherence to universal quality standards ensures consistent service across all locations."
     }
   ],
-    
+    modelPoints: [     // 👈 ye add karo
+    {
+      title: "Unified Reporting",
+      desc: "One point of contact for all your facility needs, reducing administrative overhead."
+    },
+    {
+      title: "Operational Consistency",
+      desc: "Standardized SOPs across all service lines to ensure quality never fluctuates."
+    },
+    {
+      title: "Resource Optimization",
+      desc: "Cross-trained teams and shared resources lead to significant cost savings and increased responsiveness."
+    }
+  ],
     downloadLinks: {
       pdf: '/downloads/facility-management.pdf',
       doc: '/downloads/facility-management.doc'
@@ -114,7 +130,7 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
     title: 'Senior Management',
     breadcrumb: 'Ship Management',
     content: 'The maritime industry requires specialized expertise to manage the complex operations of ships and fleets. Our ship management services are designed to provide end-to-end solutions that cover every aspect of maritime operations. From crew management and vessel maintenance to safety compliance and logistics support, we ensure that your vessels are always in top condition and ready to sail. Our experienced team understands the unique challenges of the maritime industry and works closely with you to develop customized solutions that maximize efficiency and minimize downtime. With our ship management services, you can navigate the high seas with confidence, knowing that your fleet is in capable hands',
-    details: `Our Services Include:
+    details: `
         - Housekeeping
         - Pantry Services
         `,
@@ -128,7 +144,7 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
     title: 'Payroll Management',
     breadcrumb: 'Payroll Management',
     content: 'We provide payroll management solutions that streamline business payroll processes and improve efficiency. Our comprehensive services simplify payroll management, ensuring accuracy, timeliness, and cost-effectiveness. With expertise in payroll processing, compliance, and employee management, we help businesses focus on their core operations.Our user-friendly software offers seamless employee onboarding, accurate attendance tracking, customized salary components, and flexible salary disbursement options. It ensures compliance with statutory requirements and simplifies exit, leave, and reimbursement processes.Suitable for businesses of all sizes, our tailored services and adaptable software ensure efficient and compliant payroll processes, allowing businesses to concentrate on growth and strategic initiatives.',
-    details: `Our Services Include:
+    details: `
         - Onboarding
         - Compliance Features
         - Attendance Tracking
@@ -148,7 +164,7 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
     title: 'Waste Management',
     breadcrumb: 'Waste Management',
     content: 'We offer our services to recycle, treat and dispose of your waste to ensure that our clients ethical standards as well as regulatory requirements of. We offer comprehensive solutions accessing the needs of our clients to make the work placeclean and also clean and recover to values from the waste.',
-    details: `Our Services Include:
+    details: `
         - Wet Bio-Degrable Waste
         - Dry Recyclable Waste
         - E-Waste
@@ -163,7 +179,7 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
     title: 'Sanitation Service',
     breadcrumb: 'Sanitation Service',
     content: 'We offer our services to recycle, treat and dispose of your waste to ensure that our clients ethical standards as well as regulatory requirements of. We offer comprehensive solutions accessing the needs of our clients to make the work placeclean and also clean and recover to values from the waste.',
-    details: `Our Services Include:
+    details: `
         - Sanitary Fixtures
         - Garden Irrigation
         - Pest Management Services
@@ -178,7 +194,7 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
     title: 'Corporate Canteen',
     breadcrumb: 'Corporate Canteen',
     content: 'A well-managed corporate canteen is an essential part of employee welfare, providing nutritious meals that fuel productivity and morale. Our corporate canteen management services are designed to offer a seamless dining experience that caters to the diverse tastes and dietary needs of your workforce. From menu planning and food preparation to service and hygiene, we take care of every aspect of canteen management. Our team of culinary experts works closely with you to create a menu that reflects your company’s culture and values while ensuring that meals are delicious and balanced. With our corporate canteen services, you can provide your employees with the nourishment they need to perform at their best.',
-    details: `Our Services Include:
+    details: `
         - Housekeeping
         - Pantry Services
         - Waste Management
@@ -196,7 +212,7 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
     title: 'Technical Services',
     breadcrumb: 'Technical Services',
     content: 'We take care of the operation, maintenance, inspection, and restoration of our clients offices and buildings. Our services include regular inspections and maintenance, as well as comprehensive rehabilitation efforts to ensure the safety and stability of these structures. We are committed to delivering the highest standards of care, ensuring that every building under our management remains in peak condition.Our experienced teams are composed of qualified professionals, including engineers, technicians, and experts from various domains. These specialists work collaboratively to develop and deploy a range of technical services that guarantee the smooth operation and long-term sustainability of building systems.',
-    details: `Our Services Include:
+    details: `
         - Mechanical,Electrical & HVAC
         - BMS
         - Plumbing & Carpentry
@@ -225,7 +241,7 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
     title: 'Pest Control',
     breadcrumb: 'Pest Control',
     content: 'Soft Services with adequate and trained uniformed manpower. We use latest equipment and branded chemicals for cleaning of clients commercial & non-commercial buildings, educational institutions, and government and non-government companies.',
-    details: `Our Services Include:
+    details: `
         - Comprehensive Inspections
         -  Customized Treatment Plans
         - Eco-Friendly Products
