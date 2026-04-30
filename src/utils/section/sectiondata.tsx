@@ -145,14 +145,11 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
     breadcrumb: 'Payroll Management',
     content: 'We provide payroll management solutions that streamline business payroll processes and improve efficiency. Our comprehensive services simplify payroll management, ensuring accuracy, timeliness, and cost-effectiveness. With expertise in payroll processing, compliance, and employee management, we help businesses focus on their core operations.Our user-friendly software offers seamless employee onboarding, accurate attendance tracking, customized salary components, and flexible salary disbursement options. It ensures compliance with statutory requirements and simplifies exit, leave, and reimbursement processes.Suitable for businesses of all sizes, our tailored services and adaptable software ensure efficient and compliant payroll processes, allowing businesses to concentrate on growth and strategic initiatives.',
     details: `
-        - Onboarding
-        - Compliance Features
-        - Attendance Tracking
-        - Leave And Claims
-        - Salary Customization
-        - Tax Planning
-        - flexible Disbursement
-        - Benifits Administration
+        - Seamless Onboarding 
+        - Advanced Attendance Tracking
+        - Statutory Compliance 
+        - Customized Salary Architecture 
+       
         `,
     downloadLinks: {
       pdf: '/downloads/payroll-management.pdf',
