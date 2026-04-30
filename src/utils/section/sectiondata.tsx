@@ -159,7 +159,7 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
       pdf: '/downloads/payroll-management.pdf',
       doc: '/downloads/payroll-management.doc'
     },
-     image: ,Pay
+     image: Pay
   },
   'waste-management': {
     title: 'Waste Management',
