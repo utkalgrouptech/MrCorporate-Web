@@ -143,7 +143,11 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
   'payroll-management': {
     title: 'Payroll Management',
     breadcrumb: 'Payroll Management',
-    content: 'We provide payroll management solutions that streamline business payroll processes and improve efficiency. Our comprehensive services simplify payroll management, ensuring accuracy, timeliness, and cost-effectiveness. With expertise in payroll processing, compliance, and employee management, we help businesses focus on their core operations.Our user-friendly software offers seamless employee onboarding, accurate attendance tracking, customized salary components, and flexible salary disbursement options. It ensures compliance with statutory requirements and simplifies exit, leave, and reimbursement processes.Suitable for businesses of all sizes, our tailored services and adaptable software ensure efficient and compliant payroll processes, allowing businesses to concentrate on growth and strategic initiatives.',
+    content:`We deliver intelligent payroll management solutions designed to streamline operations, enhance accuracy, and drive efficiency across your organization. Our end-to-end services simplify complex payroll processes, ensuring timely disbursement, regulatory compliance, and cost optimization.
+    
+    Backed by deep expertise in payroll processing, statutory compliance, and employee lifecycle management, we enable businesses to stay focused on their core growth and strategic priorities.
+    Our intuitive, user-friendly platform supports seamless employee onboarding, precise attendance tracking, customizable salary structures, and flexible payout options. It also ensures full compliance with statutory norms while simplifying leave management, reimbursements, and exit formalities.
+    Whether you are a growing enterprise or an established organization, our scalable solutions are tailored to meet your unique requirements—delivering accuracy, transparency, and operational excellence in every payroll cycle.`,
     details: `
         - Seamless Onboarding 
         - Advanced Attendance Tracking
