@@ -210,6 +210,39 @@ const SectionPage: React.FC = () => {
                                     ))}
                                 </div>
                             </div>
+
+{/* Why Choose Our Integrated Model */}
+{formattedSection === "facility-management" &&
+  sectionData.modelPoints &&
+  sectionData.modelPoints.length > 0 && (
+    <div className="mt-12 bg-gray-100 rounded-2xl p-8 md:p-10">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+        Why Choose Our{" "}
+        <span className="text-orange-600">
+          Integrated Model?
+        </span>
+      </h2>
+
+      <div className="space-y-6">
+        {sectionData.modelPoints.map((item, index) => (
+          <div key={index} className="flex items-start gap-4">
+            <div className="text-green-600 text-3xl font-bold">✓</div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900">
+                {item.title}
+              </h3>
+
+              <p className="text-gray-600 text-lg leading-relaxed">
+                {item.desc}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+)}
+                            
                         </div>
 
                         {/* Sidebar */}
