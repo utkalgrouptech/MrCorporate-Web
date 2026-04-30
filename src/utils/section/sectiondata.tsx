@@ -73,7 +73,7 @@ export const sectionsData: Record<string, SectionData> = {
 
 By blending cutting-edge technology with a human-centric approach, we ensure that every facility under our care operates at peak efficiency and maintains a world-class professional standard.`,
     details: `
-        - Housekeeping
+        - Housekeeping Services
         - Pantry & Cafeteria Management
         - Waste Management
         - Warehouse Management
