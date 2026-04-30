@@ -164,10 +164,9 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
   'waste-management': {
     title: 'Waste Management',
     breadcrumb: 'Waste Management',
-    content: 'At MR Corporate, we provide end-to-end solid waste management solutions designed to promote sustainability, environmental responsibility, and high standards of hygiene.
+    content: `At MR Corporate, we provide end-to-end solid waste management solutions designed to promote sustainability, environmental responsibility, and high standards of hygiene.
 Our dedicated division supports the nationwide Swachh Bharat mission, working closely with government bodies, municipal corporations, and private organizations to build cleaner and greener ecosystems.
-We provide end-to-end solutions for recycling, treatment, and safe disposal of waste—ensuring full compliance with regulatory requirements while upholding the highest ethical standards.
-',
+We provide end-to-end solutions for recycling, treatment, and safe disposal of waste—ensuring full compliance with regulatory requirements while upholding the highest ethical standards.`,
     details: `
         - Wet Biodegradable Waste
          -Dry Recyclable Waste
