@@ -43,7 +43,7 @@ const Herosection: React.FC = () => {
               contributions toward your business performance and ESG objectives.
             </p>
    <div className="mt-6">
-              <h2 className="text-3xl font-bold text-white mb-3">
+              <h2 className="text-4xl font-bold mb-4">
                 OUR VISION
               </h2>
 
