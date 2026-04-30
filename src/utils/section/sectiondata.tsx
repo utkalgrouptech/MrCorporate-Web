@@ -9,7 +9,7 @@
 //     };
 //   }
 
-import { sl, sm, waste_management } from "@/src/assets/home";
+import { sl, sm, waste_management,Pay } from "@/src/assets/home";
 import { coroprate_canteen, landscaping, payroll, pestcontrol, sanitation, technical_servises } from "@/src/assets/service";
 
   
@@ -159,7 +159,7 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
       pdf: '/downloads/payroll-management.pdf',
       doc: '/downloads/payroll-management.doc'
     },
-     image: payroll
+     image: ,Pay
   },
   'waste-management': {
     title: 'Waste Management',
