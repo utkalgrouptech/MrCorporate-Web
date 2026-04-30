@@ -164,6 +164,40 @@ const SectionPage: React.FC = () => {
                                 </div>
                             </div>
 
+{formattedSection === "facility-management" && sectionData.pillars && (
+    <div className="mt-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            Our Core <span className="text-orange-600">Pillars</span>
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {sectionData.pillars.map((item, index) => (
+                <div
+                    key={index}
+                    className="p-6 bg-gray-50 rounded-2xl border border-gray-200 hover:shadow-lg transition-all duration-300"
+                >
+                    <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-full bg-orange-600 text-white flex items-center justify-center font-bold">
+                            {index + 1}
+                        </div>
+
+                        <div>
+                            <h3 className="text-lg font-bold text-gray-900 mb-2">
+                                {item.title}
+                            </h3>
+
+                            <p className="text-gray-600 leading-relaxed">
+                                {item.desc}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+)}
+
+                            
                             {/* Services Included */}
                             <div className="mt-12">
                                 <h2 className="text-3xl font-bold text-gray-900 mb-8">Services Included</h2>
