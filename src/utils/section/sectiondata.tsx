@@ -53,6 +53,11 @@ export interface SectionData {
   breadcrumb: string;
   content: string;
   details: any; // Made details optional
+  pillars?: {
+    title: string;
+    desc: string;
+  }[];
+
   downloadLinks?: {
     pdf: string;
     doc: string;
@@ -64,17 +69,41 @@ export const sectionsData: Record<string, SectionData> = {
   'facility-management': {
     title: 'Facility Management',
     breadcrumb: 'Facility Management',
-    content: `MR Corporate is a comprehensive, full-spectrum integrated facilities management company dedicated to delivering cutting-edge facility management services across India. Our unique approach to facilities management is underpinned by a combination of expertly trained, highly proficient staff, innovative systems, and rigorous adherence to universal quality standards. This enables us to offer tailored, flexible, and cost-effective solutions designed to meet the diverse needs of our clients.
+    content: `MR Corporate is a premier provider of integrated facilities management (IFM) solutions across India. We specialize in delivering seamless, high-impact services that allow organizations to focus on their core business while we handle the complexities of their physical environment.
 
-We pride ourselves on being a one-stop destination for all your facility management requirements. Our team of experienced professionals is committed to utilizing eco-friendly products and adhering to industry best practices to ensure that every service we provide aligns with our clients' highest expectations. By integrating advanced technologies with our deep industry knowledge, we strive to deliver superior service quality, reliability, and efficiency. Our facilities management paradigm is designed to enhance operational efficiency, reduce costs, and ensure that your facilities are maintained to the highest standards.`,
-    details: `Our Services Include:
+By blending cutting-edge technology with a human-centric approach, we ensure that every facility under our care operates at peak efficiency and maintains a world-class professional standard.`,
+    details: `
         - Housekeeping
-        - Pantry Services
+        - Pantry & Cafeteria Management
         - Waste Management
         - Warehouse Management
         - Pest Management Services
         - Guest House Management
+        - Support Services
         `,
+ pillars: [
+    {
+      title: "Integrated Solutions",
+      desc: "A true one-stop destination for technical, soft, and specialized facility requirements."
+    },
+    {
+      title: "Expert Human Capital",
+      desc: "Our staff is rigorously trained and highly proficient, ensuring reliable service delivery."
+    },
+    {
+      title: "Innovation & Tech",
+      desc: "We leverage innovative systems and advanced technologies to streamline operations and reporting."
+    },
+    {
+      title: "Sustainability Focus",
+      desc: "We are committed to the environment, utilizing eco-friendly products and sustainable best practices."
+    },
+    {
+      title: "Quality Excellence",
+      desc: "Strict adherence to universal quality standards ensures consistent service across all locations."
+    }
+  ],
+    
     downloadLinks: {
       pdf: '/downloads/facility-management.pdf',
       doc: '/downloads/facility-management.doc'
