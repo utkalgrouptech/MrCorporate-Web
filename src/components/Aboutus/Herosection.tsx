@@ -62,7 +62,7 @@ const Herosection: React.FC = () => {
                 innovation, which satisfies the needs and exceeds the
                 expectations of our clients, business partners, and other
                 stakeholders.</h1>
-              <p className="text-white text-justify">Maximizing the lifecycle of our clients' assets.</p>
+              <p className="text-white text-justify">Maximizing the lifecycle of our clients assets.</p>
                 <p className="text-white text-justify">Ensuring the highest standards of safety and efficiency in critical infrastructure.</p>
                   <p className="text-white text-justify">Enhancing occupant well-being through a hospitality-led service approach.</p>
              <p className="text-white text-justify">Driving measurable ESG outcomes for a more sustainable future.</p>
