@@ -4,6 +4,7 @@ import { sectionsData, SectionData } from '../utils/section/sectiondata';
 import { breadcrumb_img } from '../assets/About';
 import MainLayout from '../layouts/MainLayout';
 import { CheckCircleOutline, Download, ArrowBack, Share, CalendarToday, Person, LocationOn } from '@mui/icons-material';
+import {  picture12 } from '../assets/home';
 
 const SectionPage: React.FC = () => {
     const router = useRouter();
@@ -242,7 +243,21 @@ const SectionPage: React.FC = () => {
       </div>
     </div>
 )}
-                            
+             {formattedSection === "payroll-management" && (
+  <div className="mt-14">
+    <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+      HR & Payroll <span className="text-orange-600">Management</span>
+    </h2>
+
+    <div className="p-6">
+      <img
+        src={picture12.src}
+        alt="Payroll Management"
+        className="w-full max-w-lg h-auto mx-auto object-contain"
+      />
+    </div>
+  </div>
+)}               
                         </div>
 
                         {/* Sidebar */}
