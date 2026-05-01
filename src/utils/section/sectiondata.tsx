@@ -181,9 +181,9 @@ We provide end-to-end solutions for recycling, treatment, and safe disposal of w
   'sanitation-service': {
     title: 'Sanitation Service',
     breadcrumb: 'Sanitation Service',
-    content: 'At MR Corporate Facilities Services, we deliver comprehensive sanitization solutions designed to ensure safe, hygienic, and compliant environments across workplaces, industries, and public spaces.
-With increasing awareness around health and hygiene, our scientifically designed sanitization protocols help minimize the risk of contamination, infection, and microbial spread—creating safer environments for employees, customers, and visitors.
-',
+    content:`At MR Corporate Facilities Services, we deliver comprehensive sanitization solutions designed to ensure safe, hygienic, and compliant environments across workplaces, industries, and public spaces.
+With increasing awareness around health and hygiene, our scientifically designed sanitization protocols help minimize the risk of contamination, infection, and microbial spread—creating safer environments for employees, customers, and visitors.`,
+
     details: `
         - Sanitary Fixtures
         - Garden Irrigation
