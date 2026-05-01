@@ -257,7 +257,106 @@ const SectionPage: React.FC = () => {
       />
     </div>
   </div>
-)}               
+)}           
+
+                            {/* Waste Management Extra Sections */}
+{formattedSection === "waste-management" && (
+  <div className="mt-14 space-y-12">
+
+    {/* Our Approach */}
+    <div>
+      <h2 className="text-3xl font-bold text-gray-900 mb-8">
+        Our <span className="text-orange-600">Approach</span>
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {[
+          {
+            title: "Site Assessment & Risk Mapping",
+            desc: "Identification of high-touch and high-risk zones for targeted sanitization."
+          },
+          {
+            title: "Deep Cleaning & Disinfection",
+            desc: "Thorough cleaning followed by application of hospital-grade disinfectants."
+          },
+          {
+            title: "Surface & Air Sanitization",
+            desc: "Treatment of floors, workstations, common areas, HVAC vents, and airspaces."
+          },
+          {
+            title: "Scheduled & On-Demand Services",
+            desc: "Daily, periodic, or emergency sanitization based on client requirements."
+          }
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="p-6 bg-gray-50 rounded-2xl border border-gray-200 hover:shadow-md transition"
+          >
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              {item.title}
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              {item.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Why Choose Us */}
+    <div className="bg-gray-100 rounded-2xl p-8">
+      <h2 className="text-3xl font-bold text-gray-900 mb-8">
+        Why <span className="text-orange-600">Choose Us</span>
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {[
+          "Trained and certified hygiene professionals",
+          "Use of safe, non-toxic, and compliant disinfectants",
+          "Adherence to industry safety and regulatory standards",
+          "Quick response and scalable service delivery",
+          "Customized solutions for different industries"
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="flex items-start gap-3 bg-white p-4 rounded-xl"
+          >
+            <span className="text-green-600 text-xl font-bold">✓</span>
+            <p className="text-gray-700">{item}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Industries We Serve */}
+    <div>
+      <h2 className="text-3xl font-bold text-gray-900 mb-8">
+        Industries We <span className="text-orange-600">Serve</span>
+      </h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        {[
+          "Corporate Offices & IT Parks",
+          "Manufacturing & Industrial Units",
+          "Healthcare & Pharmaceuticals",
+          "Educational Institutions",
+          "Hospitality & Retail",
+          "Government & Public Infrastructure"
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="p-5 bg-white border border-gray-200 rounded-xl text-center font-medium text-gray-800 hover:border-orange-500 transition"
+          >
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
+
+  </div>
+)}
+
+                            
                         </div>
 
                         {/* Sidebar */}
