@@ -9,8 +9,8 @@
 //     };
 //   }
 
-import { sl, sm, waste_management,Pay } from "@/src/assets/home";
-import { coroprate_canteen, landscaping, payroll, pestcontrol, sanitation, technical_servises,picture20 } from "@/src/assets/service";
+import { sl, sm, waste_management,Pay ,picture20 } from "@/src/assets/home";
+import { coroprate_canteen, landscaping, payroll, pestcontrol, sanitation, technical_servises } from "@/src/assets/service";
 
   
 //   export const sectionsData: Record<string, SectionData> = {
