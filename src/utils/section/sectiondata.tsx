@@ -185,9 +185,13 @@ We provide end-to-end solutions for recycling, treatment, and safe disposal of w
 With increasing awareness around health and hygiene, our scientifically designed sanitization protocols help minimize the risk of contamination, infection, and microbial spread—creating safer environments for employees, customers, and visitors.`,
 
     details: `
-        - Sanitary Fixtures
-        - Garden Irrigation
-        - Pest Management Services
+        - Workplace & Office Sanitization
+        - Industrial & Plant Disinfection 
+        - Residential & Society Sanitization 
+        - Hospital & Healthcare Facility Sanitization 
+        - Retail, Mall & Hospitality Spaces 
+        - Vehicle & Fleet Sanitization 
+        - Post-Infection / Emergency Disinfection Services 
         `,
     downloadLinks: {
       pdf: '/downloads/sanitation-service.pdf',
