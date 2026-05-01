@@ -5,7 +5,7 @@ import MainLayout from '../layouts/MainLayout';
 const SectionsPage: React.FC = () => {
   const sections = [
     'facility-management',
-    'senior-management',
+  
     'payroll-management',
     'waste-management',
     'sanitation-service',
