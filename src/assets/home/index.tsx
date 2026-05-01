@@ -29,4 +29,4 @@ export {default as aboutusnew} from "./aboutpic.jpeg"
 export {default as Pay} from "./payroll.png"
 export {default as picture12} from "./payrollpicture1.png"
 export {default as picture15} from "./wst.jpg"
-
+export {default as picture20} from "./Santitizepic.jpeg"
