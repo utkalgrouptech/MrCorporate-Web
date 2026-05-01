@@ -61,6 +61,16 @@ modelPoints?: {
     title: string;
     desc: string;
   }[];
+
+  approachPoints?: {
+    title: string;
+    desc: string;
+  }[];
+
+  whyChoose?: string[];
+
+  industries?: string[];
+  
   downloadLinks?: {
     pdf: string;
     doc: string;
