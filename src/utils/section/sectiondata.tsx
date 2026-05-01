@@ -9,7 +9,7 @@
 //     };
 //   }
 
-import { sl, sm, waste_management,Pay ,picture20 } from "@/src/assets/home";
+import { sl, sm, waste_management,Pay ,picture20,picture15 } from "@/src/assets/home";
 import { coroprate_canteen, landscaping, payroll, pestcontrol, sanitation, technical_servises } from "@/src/assets/service";
 
   
@@ -176,7 +176,7 @@ We provide end-to-end solutions for recycling, treatment, and safe disposal of w
       pdf: '/downloads/waste-management.pdf',
       doc: '/downloads/waste-management.doc'
     },
-    image: waste_management
+    image: picture15
   },
   'sanitation-service': {
     title: 'Sanitation Service',
