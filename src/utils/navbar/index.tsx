@@ -22,11 +22,7 @@ export const navArr:navArrType[]= [
                 title:"facility management",
                 path:"/facility management"
             },
-            {
-                id:32,
-                title:"senior management",
-                path:"/senior management"
-            },
+            
             {
                 id:33,
                 title:"payroll management",
