@@ -10,7 +10,7 @@
 //   }
 
 import { sl, sm, waste_management,Pay } from "@/src/assets/home";
-import { coroprate_canteen, landscaping, payroll, pestcontrol, sanitation, technical_servises } from "@/src/assets/service";
+import { coroprate_canteen, landscaping, payroll, pestcontrol, sanitation, technical_servises,picture20 } from "@/src/assets/service";
 
   
 //   export const sectionsData: Record<string, SectionData> = {
@@ -197,7 +197,7 @@ With increasing awareness around health and hygiene, our scientifically designed
       pdf: '/downloads/sanitation-service.pdf',
       doc: '/downloads/sanitation-service.doc'
     },
-     image: sanitation
+     image: picture20
   },
   'corporate-canteen': {
     title: 'Corporate Canteen',
