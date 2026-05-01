@@ -259,8 +259,8 @@ const SectionPage: React.FC = () => {
   </div>
 )}           
 
-                            {/* Waste Management Extra Sections */}
-{formattedSection === "waste-management" && (
+                            {/*sanitation-service Extra Sections */}
+{formattedSection === "sanitation-service" && (
   <div className="mt-14 space-y-12">
 
     {/* Our Approach */}
