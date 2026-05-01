@@ -136,20 +136,7 @@ By blending cutting-edge technology with a human-centric approach, we ensure tha
     },
      image: sm
   },
-  'senior-management': {
-    title: 'Senior Management',
-    breadcrumb: 'Ship Management',
-    content: 'The maritime industry requires specialized expertise to manage the complex operations of ships and fleets. Our ship management services are designed to provide end-to-end solutions that cover every aspect of maritime operations. From crew management and vessel maintenance to safety compliance and logistics support, we ensure that your vessels are always in top condition and ready to sail. Our experienced team understands the unique challenges of the maritime industry and works closely with you to develop customized solutions that maximize efficiency and minimize downtime. With our ship management services, you can navigate the high seas with confidence, knowing that your fleet is in capable hands',
-    details: `
-        - Housekeeping
-        - Pantry Services
-        `,
-    downloadLinks: {
-      pdf: '/downloads/ship-management.pdf',
-      doc: '/downloads/ship-management.doc'
-    },
-     image: sl
-  },
+
   'payroll-management': {
     title: 'Payroll Management',
     breadcrumb: 'Payroll Management',
