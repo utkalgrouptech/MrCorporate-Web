@@ -465,12 +465,28 @@ const SectionPage: React.FC = () => {
                                         <p className="text-gray-600 line-clamp-2">
                                             {service.content.substring(0, 100)}...
                                         </p>
-                                        <button className="mt-4 text-blue-600 font-semibold flex items-center group-hover:underline">
-                                            Learn More
-                                            <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                            </svg>
-                                        </button>
+                                        <button
+  onClick={(e) => {
+    e.stopPropagation();
+    router.push(`/${key}`);
+  }}
+  className="mt-4 text-blue-600 font-semibold flex items-center group-hover:underline"
+>
+  Learn More
+  <svg
+    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M14 5l7 7m0 0l-7 7m7-7H3"
+    />
+  </svg>
+</button>
                                     </div>
                                 </div>
                             ))}
