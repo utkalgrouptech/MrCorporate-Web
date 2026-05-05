@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     const router = useRouter();
 
     return (
-        <section className="w-full bg-red-200 z-50">
+        <section className="w-full  z-50">
             <div className="main-container flex items-center justify-between h-16 px-4 lg:px-8">
                 {/* Logo Section */}
                 <div className="flex items-center">
