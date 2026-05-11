@@ -217,14 +217,14 @@ With increasing awareness around health and hygiene, our scientifically designed
   'technical-services': {
     title: 'Technical Services',
     breadcrumb: 'Technical Services',
-    content: 'We take care of the operation, maintenance, inspection, and restoration of our clients offices and buildings. Our services include regular inspections and maintenance, as well as comprehensive rehabilitation efforts to ensure the safety and stability of these structures. We are committed to delivering the highest standards of care, ensuring that every building under our management remains in peak condition.Our experienced teams are composed of qualified professionals, including engineers, technicians, and experts from various domains. These specialists work collaboratively to develop and deploy a range of technical services that guarantee the smooth operation and long-term sustainability of building systems.',
+    content: 'Technical Services We provide comprehensive operation, maintenance, inspection, and restoration services for offices, commercial buildings, and institutional infrastructure. Our focus is on ensuring the safety, efficiency, reliability, and long-term sustainability of every facility under our management. Through regular inspections, preventive maintenance, and complete rehabilitation solutions, we help clients maintain their properties in peak operational condition.Our team comprises highly qualified professionals, including engineers, technicians, and domain experts, who work collaboratively to deliver integrated technical solutions tailored to the specific needs of each facility. With a commitment to quality, safety, and operational excellence, we ensure seamless building performance and uninterrupted functionality of critical systems.',
     details: `
         - Mechanical,Electrical & HVAC
-        - BMS
-        - Plumbing & Carpentry
-        - Water Treatment Systems
-        - Fire & Safety Systems
-        - Project Management
+        - Building Management System (BMS) Operations
+        - Plumbing & Carpentry Maintenance 
+        - Water Treatment Systems Management 
+        - Fire & Safety Systems Maintenance 
+        - Project Management Services 
         `,
     downloadLinks: {
       pdf: '/downloads/technical-services.pdf',
@@ -236,7 +236,26 @@ With increasing awareness around health and hygiene, our scientifically designed
     title: 'Landscaping',
     breadcrumb: 'Landscaping',
     content: 'A well-maintained landscape not only enhances the aesthetic appeal of your property but also contributes to a positive environment. Our landscaping services are designed to create beautiful, sustainable outdoor spaces that reflect your company’s image and values. From garden design and installation to ongoing maintenance and irrigation, we offer a comprehensive range of landscaping solutions that meet your specific needs. Our team of experienced landscapers works closely with you to develop a customized plan that brings your vision to life. With our landscaping services, you can create an outdoor environment that is both beautiful and sustainable.',
-    details: ``,
+    details: `
+    
+        -  Landscape Design & Planning
+          -  Garden Development & Plantation
+            -  Lawn Installation & Maintenance
+              -   Tree & Shrub Care 
+                -  Irrigation System Installation & Management 
+                  -  Seasonal Planting & Flower Bed Maintenance 
+                    - Weed Control & Pest Management 
+                      -  Pathway & Decorative Landscaping
+                        -  Outdoor Lighting for Landscaped Areas
+                        -Pruning, Trimming & Mulching 
+                        -Green Waste Removal & Site Cleaning 
+ - Sustainable & Eco-Friendly Landscaping Solutions 
+- Corporate Campus & Commercial Landscape Maintenance 
+-  Water Feature Maintenance 
+-  Hardscape Maintenance (Pavers, Walkways & Boundaries) 
+-  Routine Inspection & Preventive Landscape Care
+        
+        `,
     downloadLinks: {
       pdf: '/downloads/landscaping.pdf',
       doc: '/downloads/landscaping.doc'
@@ -246,7 +265,8 @@ With increasing awareness around health and hygiene, our scientifically designed
   'pestcontrol': {
     title: 'Pest Control',
     breadcrumb: 'Pest Control',
-    content: 'Soft Services with adequate and trained uniformed manpower. We use latest equipment and branded chemicals for cleaning of clients commercial & non-commercial buildings, educational institutions, and government and non-government companies.',
+    content: 'MRCorporate is one of the most trusted names in providing eco-friendly and long-lasting pest control solutions. We utilize state-of-the-art technology and highly trained professionals to deliver safe, effective, and reliable pest management services for residential, commercial, and industrial spaces.No matter the severity of the infestation, our experienced technicians are fully qualified and equipped to handle every type of pest problem with precision and care. Our focus is not only on eliminating pests but also on preventing future infestations through sustainable and scientifically proven methods.'
+    ,
     details: `
         - Comprehensive Inspections
         -  Customized Treatment Plans
