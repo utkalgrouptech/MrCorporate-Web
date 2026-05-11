@@ -1,4 +1,4 @@
-import { airport_management, bc, bd, ceo, facility_management, md, mm, se, ship_management, sl, slider1, slider2, slider3, sm, waste_management,} from "@/src/assets/home";
+import { airport_management, bc, bd, ceo, facility_management, md, mm, se, ship_management, sl, slider1, slider2, slider3, sm, waste_management,niranjan} from "@/src/assets/home";
 import {
   TrendingUp,
   WorkspacePremium,
@@ -209,8 +209,8 @@ export const teamData = [
   },
   {
     name: "Niranjan Mishra",
-    role: "BDM",
-    image: mm,
+    role: "Director Of Finance",
+    image: niranjan,
     phone: "#",
     email: "#",
   },
