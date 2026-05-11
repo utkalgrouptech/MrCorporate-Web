@@ -34,3 +34,5 @@ export {default as picture20} from "./Santitizepic.jpeg"
 export {default as PayNew} from "./payrollnew.jpg"
 export {default as Facility} from "./facility-management-design.png"
 export {default as niranjan} from "./niranjan.jpg"
+export {default as pst} from "./pest.png"
+

@@ -9,7 +9,7 @@
 //     };
 //   }
 
-import { sl, sm, waste_management,Pay ,picture20,picture15,PayNew } from "@/src/assets/home";
+import { sl, sm, waste_management,Pay ,picture20,picture15,PayNew, pst } from "@/src/assets/home";
 import { coroprate_canteen, landscaping, payroll, pestcontrol, sanitation, technical_servises } from "@/src/assets/service";
 
   
@@ -279,7 +279,7 @@ With increasing awareness around health and hygiene, our scientifically designed
       pdf: '/downloads/staffing-solution.pdf',
       doc: '/downloads/staffing-solution.doc'
     },
-     image: pestcontrol
+     image: pst
   }
 };
 
