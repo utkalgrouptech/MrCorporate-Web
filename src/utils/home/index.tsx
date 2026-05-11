@@ -1,5 +1,16 @@
-import { airport_management, bc, bd, ceo, facility_management, md, mm, se, ship_management, sl, slider1, slider2, slider3, sm, waste_management } from "@/src/assets/home";
-
+import { airport_management, bc, bd, ceo, facility_management, md, mm, se, ship_management, sl, slider1, slider2, slider3, sm, waste_management,} from "@/src/assets/home";
+import {
+  TrendingUp,
+  WorkspacePremium,
+  Engineering,
+  BuildCircle,
+  Shield,
+  Groups,
+  Security,
+  Handyman,
+ EnergySavingsLeaf,
+  
+} from "@mui/icons-material";
 
 export const cardArr=[
     {
@@ -101,34 +112,76 @@ import { Build, CheckCircle, EventAvailable, Forum, Star, Update } from "@mui/ic
 
 export const featuresData = [
   {
-    icon: <Build fontSize="large" />, // Specialized Company
-    title: "Specialized Company",
-    description: "We’re specialized in residential and commercial cleaning.",
+    icon: <TrendingUp fontSize="large" />,
+    number: "01",
+    title: "Cost Efficiency",
+    description:
+      "Optimize operational costs with professional facility management services.",
+    color: "orange",
   },
   {
-    icon: <CheckCircle fontSize="large" />, // Licensed and Insured
-    title: "Licensed and Insured",
-    description: "All cleaners are licensed and insured for your peace of mind.",
+    icon: <WorkspacePremium fontSize="large" />,
+    number: "02",
+    title: "Higher Productivity",
+    description:
+      "Maintain a clean, safe, and productive working environment.",
+    color: "blue",
   },
   {
-    icon: <EventAvailable fontSize="large" />, // Dependable Services
-    title: "Dependable Services",
-    description: "We love to take pride. Each job is finished in time and budget.",
+    icon: <Engineering fontSize="large" />,
+    number: "03",
+    title: "Professional Expertise",
+    description:
+      "Benefit from skilled technicians and trained support teams.",
+    color: "green",
   },
   {
-    icon: <Update fontSize="large" />, // Same Day Scheduling
-    title: "Same Day Scheduling",
-    description: "We schedule regularly to visit you on the same day and time.",
+    icon: <BuildCircle fontSize="large" />,
+    number: "04",
+    title: "Preventive Maintenance",
+    description:
+      "Minimize breakdowns through regular inspections and maintenance.",
+    color: "purple",
   },
   {
-    icon: <Forum fontSize="large" />, // Provide Consultations
-    title: "Provide Consultations",
-    description: "We give free consultations and provide you with a quote.",
+    icon: <Shield fontSize="large" />,
+    number: "05",
+    title: "Safety & Compliance",
+    description:
+      "Ensure compliance with safety standards and statutory regulations.",
+    color: "teal",
   },
   {
-    icon: <Star fontSize="large" />, // Reputable Company
-    title: "Reputable Company",
-    description: "Operating more than 15 years earning a reputation for service.",
+    icon: <Groups fontSize="large" />,
+    number: "06",
+    title: "Single Point Management",
+    description:
+      "Simplify operations with one dedicated service partner.",
+    color: "indigo",
+  },
+  {
+    icon: <Security fontSize="large" />,
+    number: "07",
+    title: "Asset Protection",
+    description:
+      "Enhance asset life through proper maintenance and timely servicing.",
+    color: "orange",
+  },
+  {
+    icon: <Handyman fontSize="large" />,
+    number: "08",
+    title: "Customized Solutions",
+    description:
+      "Get tailored services designed for your operational requirements.",
+    color: "blue",
+  },
+  {
+    icon: <EnergySavingsLeaf fontSize="large" />,
+    number: "09",
+    title: "Sustainable Operations",
+    description:
+      "Adopt eco-friendly and energy-efficient facility management practices.",
+    color: "green",
   },
 ];
 
